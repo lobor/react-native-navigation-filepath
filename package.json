@@ -1,0 +1,66 @@
+{
+  "name": "react-native-navigation-filepath",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "watch": "node ./scripts/watch.mjs",
+    "build": "node ./scripts/build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "./vite": {
+      "require": "./lib/vite.js",
+      "import": "./lib/vite.js"
+    },
+    "./babel": {
+      "require": "./lib/babel.js",
+      "import": "./lib/babel.js"
+    },
+    "./route": {
+      "require": "./lib/Components/Route.js",
+      "import": "./lib/Components/Route.js"
+    },
+    "./link": {
+      "require": "./lib/Components/Link.js",
+      "import": "./lib/Components/Link.js"
+    },
+    "./useLink": {
+      "require": "./lib/hooks/useLink.js",
+      "import": "./lib/hooks/useLink.js"
+    },
+    "./useParams": {
+      "require": "./lib/hooks/useParams.js",
+      "import": "./lib/hooks/useParams.js"
+    },
+    "./useRouter": {
+      "require": "./lib/hooks/useRouter.js",
+      "import": "./lib/hooks/useRouter.js"
+    }
+  },
+  "files": [
+    "./lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@crossed/build": "^0.5.0",
+    "@react-navigation/elements": "^2.2.5",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/native-stack": "^7.2.0",
+    "@types/react": "^18.3.18",
+    "esbuild": "^0.24.2",
+    "react": "^18.3.1",
+    "typescript": "~5.6.2"
+  },
+  "peerDependencies": {
+    "@react-navigation/elements": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "*",
+    "react": "*"
+  },
+  "dependencies": {
+    "glob": "^11.0.0"
+  }
+}
